@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite parallel="classes" name="Suite1">
+  <test thread-count="5" name="Test1" parallel="classes">
+    <classes>
+		<class name="test.TestNgDemo"/>
+    	<class name="test.TestNgDemo2">
+    		<method>
+				<include name="googleSaerch3"></include>
+			</method>
+		</class>
+    </classes>
+  </test> <!-- Test1 -->
+</suite> <!-- Suite1 -->
