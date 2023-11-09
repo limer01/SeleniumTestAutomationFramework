@@ -1,5 +1,7 @@
 package com.testframework.qa.pages;
 
-public class WhatsNew {
+import com.testframework.qa.base.TestBase;
+
+public class WhatsNew extends TestBase{
 
 }

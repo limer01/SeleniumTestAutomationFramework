@@ -1,5 +1,7 @@
 package com.testframework.qa.pages;
 
-public class Gear {
+import com.testframework.qa.base.TestBase;
+
+public class Gear extends TestBase{
 
 }

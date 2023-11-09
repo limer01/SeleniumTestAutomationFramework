@@ -1,5 +1,7 @@
 package com.testframework.qa.pages;
 
-public class Men {
+import com.testframework.qa.base.TestBase;
+
+public class Men extends TestBase{
 
 }

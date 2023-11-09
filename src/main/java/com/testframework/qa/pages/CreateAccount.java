@@ -1,5 +1,7 @@
 package com.testframework.qa.pages;
 
-public class CreateAccount {
+import com.testframework.qa.base.TestBase;
+
+public class CreateAccount extends TestBase {
 
 }
