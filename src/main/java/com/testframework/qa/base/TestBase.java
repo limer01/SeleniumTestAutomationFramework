@@ -19,12 +19,12 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 
-	//init prop
+
 	public TestBase() {
 		
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("");
+			FileInputStream ip = new FileInputStream("C:\\Users\\lalor\\git\\SeleniumTestAutomationFramework\\SeleniumFramework\\src\\main\\java\\com\\testframework\\qa\\config\\config.properties");
 			prop.load(ip);
 			
 		} catch(FileNotFoundException e) {
@@ -50,7 +50,7 @@ public class TestBase {
 		}
 		
 		driver.manage().window().maximize();
-		driver.manage().deleteAllCookies();
+		//driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.PAGE_LOAD_TIMEOUT));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(TestUtil.IMPLICIT_WAIT));
 		driver.get(prop.getProperty("url"));
