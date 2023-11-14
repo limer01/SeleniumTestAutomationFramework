@@ -8,6 +8,9 @@ import com.testframework.qa.base.TestBase;
 
 public class HomePage extends TestBase{
 	
+	@FindBy(xpath="//a[@class='logo']/img")
+	WebElement homePageIcon;
+	
 	@FindBy(xpath="//span[text()=\"What's New\"]")
 	WebElement whatsNewPageLink;
 	
@@ -33,6 +36,11 @@ public class HomePage extends TestBase{
 	
 	public String verifyHomePageTitle(){
 		return driver.getTitle();
+	}
+	
+	public HomePage homePageLink() {
+		homePageIcon.click();
+		return new HomePage();
 	}
 	
 	public WhatsNewPage whatsNewPageLink() {
