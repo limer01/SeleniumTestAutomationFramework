@@ -9,10 +9,10 @@ import com.testframework.qa.base.TestBase;
 public class LoginPage extends TestBase{
 	
 	//Page Factory
-	@FindBy(name="login[userName]")
+	@FindBy(xpath="//input[@name=\"login[username]\"]")
 	WebElement userName;
 	
-	@FindBy(name="login[passWord]")
+	@FindBy(xpath="//input[@name='login[password]']")
 	WebElement password;
 	
 	@FindBy(xpath="//button/span[text()=\"Sign In\"]")
@@ -32,12 +32,13 @@ public class LoginPage extends TestBase{
 		return driver.getTitle();
 	}
 	
-	public HomePage login(String un, String pwd) {
+	public MyAccountPage login(String un, String pwd) {
 		userName.sendKeys(un);
+		
 		password.sendKeys(pwd);
 		signinBtn.click();
 		
-		return new HomePage();
+		return new MyAccountPage();
 	}
 
 }
