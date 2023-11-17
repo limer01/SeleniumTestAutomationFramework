@@ -6,8 +6,8 @@
       <class name="com.testframework.qa.testcases.MyAccountPageTest">
         <methods>
           <include name="tearDown"/>
+          <include name="verifyUserNameDisplayed"/>
           <include name="setUp"/>
-          <include name="verifyMyAccountPageTitleTest"/>
         </methods>
       </class> <!-- com.testframework.qa.testcases.MyAccountPageTest -->
     </classes>

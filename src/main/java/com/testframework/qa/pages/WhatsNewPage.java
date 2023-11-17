@@ -34,7 +34,7 @@ public class WhatsNewPage extends TestBase{
 		PageFactory.initElements(driver, this);
 	}
 	
-	public String verifyHomePageTitle(){
+	public String verifyWhatsNewPageTitle(){
 		return driver.getTitle();
 	}
 	

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Selenium Automation suite 1">
+ <test name="Test1">
+     <classes>
+       <class name="com.testframework.qa.testcases.MyAccountPageTest"/>
+       <class name="com.testframework.qa.testcases.WhatsNewPageTest"/>
+       <class name="com.testframework.qa.testcases.WomenPageTest"/>
+    </classes>
+ </test><!-- Test -->
+</suite><!-- Test -->

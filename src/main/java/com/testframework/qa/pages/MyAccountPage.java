@@ -23,19 +23,38 @@ public class MyAccountPage extends TestBase{
 	@FindBy(xpath="//span[text()='Gear']")
 	WebElement gearPageLink;
 	
-	@FindBy(xpath="Training")
+	@FindBy(xpath="//span[text()='Training']")
 	WebElement trainingPageLink;
 	
-	@FindBy(xpath="Sale")
+	@FindBy(xpath="//span[text()='Sale']")
 	WebElement salePageLink;
+	
+	
+	@FindBy(xpath="//span[text()=\"Welcome, Test Test!\"]")
+	WebElement welcomeUserNameTxt;
+	
+	@FindBy(xpath="//address[1]")
+	WebElement address;	
+	
+	
+	
 	
 	//initialize the Page Object
 	public MyAccountPage() {
 		PageFactory.initElements(driver, this);
 	}
 	
+	public String verifyAddress() {
+		return address.toString();
+	}
+	
+		
 	public String verifyMyAccountTitle(){
 		return driver.getTitle();
+	}
+	
+	public boolean verifyHeaderUserName() {
+		return welcomeUserNameTxt.isDisplayed();
 	}
 	
 	public HomePage homePageLink() {
